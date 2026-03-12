@@ -745,7 +745,10 @@
                 startRound();
             };
         }
-
+		document.getElementById('next-btn').onclick = () => {
+            currentIdxInQueue++;
+            loadQuestion();
+        };
         // 啟動遊戲
         if(questions.length > 0) {
             initGame();
@@ -755,3 +758,4 @@
     </script>
 </body>
 </html>
+
